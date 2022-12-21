@@ -1,0 +1,138 @@
+.intro {
+    /* border: 1px solid darkcyan; */
+    display: flex;
+    height: 70vh;
+    margin-top: 4rem;
+}
+
+.intro_left {
+    /* border: 1px solid rgb(47, 52, 9); */
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro_name>:nth-child(1) {
+    color: rgb(47, 52, 9);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.intro_name>:nth-child(2) {
+    color: rgb(164, 110, 8);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.intro_name>:nth-child(3) {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-top: 3%;
+}
+
+.s_html{
+    color: orangered;
+}
+.s_css{
+    color: blue;
+}
+.s_js{
+    color: darkorange;
+}
+.s_react{
+    color: skyblue;
+    /* border-bottom: 1px solid black; */
+}
+.s_node{
+    color: green;
+}
+
+.intro_btn {
+    width: 7rem;
+    height: 2rem;
+}
+.intro_icon{
+    margin-top: 2rem;
+    display: flex;
+    gap: 0rem;
+}
+.intro_icon>*{
+    transform: scale(0.5);
+}
+.intro_icon>*:hover{
+    cursor: pointer;
+}
+
+
+/* right side  */
+.intro_right {
+    /* border: 2px solid salmon; */
+    flex: 1;
+    position: relative;
+}
+.intro_right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.intro_right>:nth-child(1){
+    transform: scale(0.62); 
+    top: -8%;
+    left: 2%;
+}
+.intro_right>:nth-child(2){
+    top: -7.3rem;
+    transform: scale(0.57);
+    left: -1rem;
+}
+.intro_right>:nth-child(3){
+    transform: scale(1.1);
+    left: 34%;  
+}
+.intro_right>:nth-child(4){
+    transform: scale(0.5);
+    top: -3rem;
+    left:-3rem ;
+}
+.intro_right>:nth-child(5){
+    transform: scale(0.6);
+    left: 85%;
+    top: 2rem;  
+}
+
+
+@media screen and (max-width: 480px), (max-width: 780px) {
+    .intro {
+      flex-direction: column;
+      gap: 4rem;
+      height: 60rem;
+    }
+  
+    .intro_right {
+      transform: scale(0.8);
+      left: -4rem;
+    }
+    .intro_right>:nth-child(1){
+        top: -8%;
+        left: -7rem;
+        transform: scale(0.55);
+    }
+    .intro_right>:nth-child(2){
+        top: -7.3rem;
+        left: -6rem;
+        transform: scale(0.50);
+    }
+    .intro_right>:nth-child(3){
+        left: 35%;  
+        transform: scale(1);
+    }
+  }
